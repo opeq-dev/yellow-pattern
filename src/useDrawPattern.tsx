@@ -5,7 +5,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { DrawPatternOptions, drawPattern } from '../libs';
+import { DrawPatternOptions, drawPattern } from './libs';
 
 /**
  *
@@ -15,7 +15,7 @@ import { DrawPatternOptions, drawPattern } from '../libs';
  */
 export const useDrawPattern = (
   icons: string[],
-  { count, size }: DrawPatternOptions,
+  { count, size }: DrawPatternOptions = { count: 50, size: 300 },
 ) => {
   const ref = useRef<HTMLDivElement>(null);
   const [svg, setSvg] = useState<SVGSVGElement | null>(null);

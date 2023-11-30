@@ -46,8 +46,7 @@ export const drawPattern = (
   svg.attr('width', size).attr('height', size);
 
   polygons.forEach((polygon) => {
-    const s = Math.floor(Math.random() * icons.length);
-    const icon = icons[s];
+    const icon = icons[Math.floor(Math.random() * icons.length)];
 
     drawElements(drawSvg, {
       canvas: { value: svg, size },

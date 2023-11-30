@@ -1,12 +1,12 @@
 import { createElement, useMemo } from 'react';
 import { renderToString } from 'react-dom/server';
 import * as phosphorIcons from '@phosphor-icons/react';
-import { useDrawPattern } from '../hooks/useDrawPattern';
+import { useDrawPattern } from '../../src';
 import { PatternControls } from './PatternControls';
 
-interface PatternExapmleProps {
-  size?: number;
+interface PatternExampleProps {
   count?: number;
+  size?: number;
 }
 
 /**
@@ -15,10 +15,10 @@ interface PatternExapmleProps {
  * @param count
  * @returns
  */
-export const PatternExapmle = ({
-  size = 300,
+export const PatternExample = ({
   count = 50,
-}: PatternExapmleProps) => {
+  size = 300,
+}: PatternExampleProps) => {
   const icons = useMemo(
     () =>
       Object.entries(phosphorIcons)
