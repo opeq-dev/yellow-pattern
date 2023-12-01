@@ -1,4 +1,4 @@
-# useDrawPattern
+# `@opeq-dev/yellow-pattern`
 
 The `useDrawPattern` is a React hook that allows you to draw a pattern from an array of svg strings.
 
@@ -10,14 +10,14 @@ re-draw the pattern.
 Install the package using your preferred package manager:
 
 ```bash
-npm install use-draw-pattern
+npm install @opeq-dev/yellow-pattern
 ```
 
 ## Usage
 
 ```tsx
 import React from 'react';
-import { useDrawPattern } from 'use-draw-pattern';
+import { useDrawPattern } from '@opeq-dev/yellow-pattern';
 
 const icons = [
   '<svg viewBox="0 0 24 24" fill="#70649b"><path d="M4.5 2h15v15h-15z"/></svg>',

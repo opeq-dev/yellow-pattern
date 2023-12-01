@@ -1,5 +1,5 @@
 {
-  "name": "svg-pattern",
+  "name": "@opeq-dev/yellow-pattern",
   "description": "The `useDrawPattern` is a React hook that allows you to draw a pattern from an array of svg strings.",
   "private": true,
   "version": "1.0.0",
